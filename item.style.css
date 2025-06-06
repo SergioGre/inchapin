@@ -1,0 +1,177 @@
+button {
+    cursor: pointer;
+}
+ 
+
+.menu-btn{
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+   
+    .menu-btn_burger {
+        width: 30px;
+        height: 17px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        transition: 0.5s;
+        margin-right: 13px;
+    }
+
+        .menu-btn_burger span {
+            display: block;
+            height: 2px; 
+            width: 100%;
+            background-color: var(--akcent-color);
+            border-radius: 2px; 
+            
+        }
+        .menu-btn:hover .menu-btn_burger{
+            height: 25px;
+            transition: 0.5s;
+        }
+
+.choosing-an-apartment{
+    border-radius: 50px;
+    background-color: var(--akcent-color);
+    padding: 15px 25px 15px 25px;
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+    .choosing-an-apartment span {
+        margin-right: 10px;
+
+    }
+.order-call{
+    padding: 15px 25px 15px 25px;
+    color: var(--akcent-color);
+    background-color: #ffffff00;
+    border: none;
+
+}
+            .circle-inside-el{
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .second-block_right_vibeo-btn video {
+                 object-fit: cover;
+            }
+            .second-block_right_vibeo-btn button{
+              background-color: rgba(28,28,28,0);
+              border: 0;
+            }
+            .second-block_right_vibeo-btn_circle{
+                border: solid 1px #fff;
+                top: 20%;
+                left: 20%;
+                width: 60%;
+                height: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                  transition: 0.5s;
+            }
+            
+           
+            .second-block_right_vibeo-btn_video-placeholder{
+                transition: 0.5s;
+                opacity: 1;
+            }
+                .second-block_right_vibeo-btn:hover img {
+                    transition: 0.5s;
+                    opacity: 0;
+                }
+                .second-block_right_vibeo-btn:hover .second-block_right_vibeo-btn_circle {
+                    transition: 0.5s;
+                    scale: 1.1;
+                }
+                .second-block_right_vibeo-btn span {
+                    
+                    font-size: 1.5rem;
+                }
+
+
+ 
+.button--anim span {
+	display: block;
+	position: relative;
+    animation: MoveDownInitial 0.15s forwards, MoveDownEnd 0.15s forwards 0.15s;
+}
+
+.button--anim > span {
+	transition: transform 0.3s;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.button--anim:hover > span {
+	transform: translate3d(0,-0.111rem,0);
+}
+
+.button--anim:hover > span > span {
+	animation: MoveUpInitial 0.15s forwards, MoveUpEnd 0.15s forwards 0.15s;
+}
+
+.form_button{
+     border-radius: 50px;
+    background-color: var(--akcent-color);
+    padding: 15px 15px 15px 15px;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+
+}
+
+
+
+@keyframes MoveUpInitial {
+	to {
+		transform: translate3d(0,-105%,0);
+	}
+}
+
+@keyframes MoveUpEnd {
+	from {
+		transform: translate3d(0,100%,0);
+	}
+	to {
+		transform: translate3d(0,0,0);
+	}
+}
+@keyframes MoveDownInitial {
+    to {
+		transform: translate3d(0,105%,0);
+	}
+}
+
+@keyframes MoveDownEnd {
+	from {
+        transform: translate3d(0,-100%,0);
+	}
+	to {
+		transform: translate3d(0,0,0);
+    }   
+}
