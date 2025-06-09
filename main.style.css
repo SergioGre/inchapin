@@ -4,7 +4,7 @@
     --text-color: #111111;
 
 }
-body{
+main {
     padding-bottom: 40px;
     margin: auto;
 }
@@ -268,7 +268,7 @@ form > p {
 
         
 @media (0px <= width <= 767px) {
-     body {
+     main, header {
     width: 340px;
     margin: auto;
     }
@@ -362,7 +362,7 @@ form > p {
     }  
 }
 @media (768px <= width <= 1023px) {
-     body {
+    main, header {
     width: 700px;
     margin: auto;
     }
@@ -445,7 +445,7 @@ form > p {
 
 }
 @media (1024px <= width <= 1280px) {
-     body {
+    main, header {
     width: 970px;
     margin: auto;
     }
@@ -500,7 +500,7 @@ form > p {
     
 }
  @media (1281px <= width <= 1769px) {
-    body {
+    main, header {
     width: 1347px;
     margin: auto;
     }
@@ -528,7 +528,7 @@ form > p {
 }
 
 @media (min-width: 1770px) {
-     body {
+     main, header {
     width: 1700px;
     margin: auto;
     }
@@ -560,3 +560,15 @@ form > p {
     }
    
 }
+
+html, body {
+    overflow: hidden;
+   
+   
+  }
+  
+  #scroll-container {
+    height: 100vh; 
+    overflow: hidden; 
+   
+  }
