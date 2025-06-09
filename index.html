@@ -12,7 +12,7 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
-
+    <div id="scroll-container">
     <header>
         
             <button class="menu-btn">
@@ -40,7 +40,8 @@
             </button>
         
     </header>
-    <div id="scroll-container">
+    
+    
     <main>
         <article class="firs-block">
             <img src="./public/img/Main-image.png" alt="main-screan-image" class="firs-block_img">
@@ -124,20 +125,21 @@
             </form>
         </article>
 
+       
 
      <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8/dist/smooth-scrollbar.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const container = document.getElementById('scroll-container');
-    const scrollbar = Scrollbar.init(container, {
-      damping: 0.07, 
-      alwaysShowTracks: true
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const container = document.getElementById('scroll-container');
+        const scrollbar = Scrollbar.init(container, {
+        damping: 0.07, 
+        alwaysShowTracks: true
+        });
+        
+        
     });
-    
-    
-  });
-  </script>
+    </script>
 
 </body>
 <script src="./index.js"></script>
